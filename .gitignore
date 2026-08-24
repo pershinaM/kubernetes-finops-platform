@@ -1,0 +1,42 @@
+# Operating system and editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Kubernetes and local access artifacts
+kubeconfig
+*.kubeconfig
+*.secret.yaml
+*.secrets.yaml
+secrets.yaml
+*.dec.yaml
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.credentials
+*.creds
+*.token
+
+# Local tooling outputs
+dist/
+tmp/
+.tmp/
+coverage/
+
