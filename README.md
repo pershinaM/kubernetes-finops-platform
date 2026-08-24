@@ -404,6 +404,7 @@ The repository now contains a working scaffold for the first implementation step
 - an Argo CD root application and local application split between platform and workloads,
 - a GitOps-managed Kyverno installation plus a Kyverno policy for required FinOps labels,
 - local entrypoints for observability and FinOps components,
+- a dedicated GitOps-managed VictoriaMetrics stack application for cluster metrics collection,
 - placeholder dashboards-as-code ConfigMaps,
 - sample workload manifests for `checkout` and `analytics`,
 - initial `k6` scenarios.

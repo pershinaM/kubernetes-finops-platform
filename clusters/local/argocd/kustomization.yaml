@@ -4,5 +4,6 @@ resources:
   - project-platform.yaml
   - application-kyverno.yaml
   - application-governance-policies.yaml
+  - application-victoriametrics.yaml
   - application-platform.yaml
   - application-workloads.yaml
