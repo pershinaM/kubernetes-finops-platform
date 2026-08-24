@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: governance-policies-local
+  name: kyverno-policies-local
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "1"
