@@ -13,4 +13,5 @@ Governance in Local v1 should support the FinOps metadata model directly and avo
 Current scaffold:
 
 - `kyverno/base` contains repository-owned policies,
-- `kyverno/local` keeps the local deployment entrypoint stable before the controller install is wired.
+- `kyverno/policies/local` is the GitOps path synced by Argo CD for Local v1,
+- the Kyverno controller itself is installed by a dedicated Argo CD Application from the upstream Helm chart.

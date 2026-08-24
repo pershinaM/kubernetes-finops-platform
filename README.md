@@ -402,7 +402,7 @@ The repository now contains a working scaffold for the first implementation step
 
 - local namespace definitions for `argocd`, `observability`, `finops-system`, `governance-system`, `dev`, `stage`, and `prod`,
 - an Argo CD root application and local application split between platform and workloads,
-- a Kyverno policy for required FinOps labels,
+- a GitOps-managed Kyverno installation plus a Kyverno policy for required FinOps labels,
 - local entrypoints for observability and FinOps components,
 - placeholder dashboards-as-code ConfigMaps,
 - sample workload manifests for `checkout` and `analytics`,
@@ -451,7 +451,7 @@ The intended local path is deliberately standard:
 3. Update the repository URL in `platform/gitops/bootstrap/root-application.yaml`.
 4. Apply the root Argo CD application with `kubectl`.
 5. Let Argo CD reconcile `clusters/local`.
-6. Install or wire Helm-based platform components through the repository paths already defined under `platform/`.
+6. Let Argo CD install GitOps-managed platform dependencies such as Kyverno, then wire the remaining Helm-based platform components through the repository paths already defined under `platform/`.
 7. Create any required local secrets outside Git.
 8. Deploy workloads and run `k6` scenarios.
 
